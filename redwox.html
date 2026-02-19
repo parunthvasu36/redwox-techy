@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+    <head>
+         
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width;initial-scale=1.0;">
+        <title>REDWOX</title>
+        <link rel="website icon" type="png" href="owl favicon.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Butcherman&family=Oi&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        
+        body{
+            background-color:  #D2D7D9;
+        } 
+        h1{
+            color:rgb(179, 69, 171);
+           font-family: "Unbounded", sans-serif;
+            text-align:center;
+            font-size:150px;
+        }
+           p{
+            text-align:center;
+            color:black;
+            font-size:30px;
+            font-style: bold;
+              font-family: "Archivo Black", sans-serif;
+           }
+           footer {
+            background-color:#191970;}
+
+            footer p{
+
+            text-align:left;
+            font-size:15px;
+            color:#f9f6f0!important;
+           }
+         footer a {
+            font-size:20px;
+         }
+         p{
+            text-align:center;
+            display:flex;
+            justify-content:center;
+         }
+         ul {
+            list-style-type:none; /* removes bullets point from list */
+            margin:0;  /* removes default margin spacing */
+            padding:0; /* remove default padding space */
+            overflow:hidden; /*prevents content from overflow */
+            background-color:#D2D7D9; /*background color for the text */
+            display:flex; /*to flex the display */
+            justify-content:center; /*move the navigation to the center of page */
+         }
+         ul li {
+            float:left; /*makes item sit side bt side horizontally */
+            /* border-right: 5px solid white; to add a middle bar between them */
+         }
+         ul li:last-child{
+            border-right:none; /* remove border from the last menu items */
+         }
+         ul li a {
+         display:block; /* makes the entire area clickable not just text , without block only text being clickable */
+            color:black; /* text color */
+            text-align:center; /* centers text within links */
+            padding:24px 16px; /*top button:24 px , left / top button:16 px , right */
+            text-decoration:none; /* to remove the underline */
+         }
+         ul li a:hover:not(.active){
+            background-color:gold; /* when mouse move to this icon it shows a gold color */
+         }
+         ul li a.active{
+            background-color:goldenrod; /* it shows a green color when a current page is selected in nav icon */
+         }
+         .container h1{
+            max-width:none;
+            margin:0;
+            display:flex;
+            text-align:center;
+            align-items:center;
+            border-radius:30px;
+            margin-bottom:50px;
+            box-shadow:0 10px 30px rgba(0,0,0,0,1);
+            background:gold;
+            clear:both;
+            
+         }
+         .goldfade{        /*make gold cover*/
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100vh;
+            background-color: gold;
+            z-index:9999; /* to up this page layer above the orginal site */
+            animation:appear 0.8s forwards;
+            display:flex;
+            justify-content:center;
+            text-align:center;
+            align-items:center;
+            font-size:150px;
+         }
+         .goldfade h1 span{
+            display:block;   /*this makes the techy heading on second line */
+         }
+         @keyframes appear{   /*keyframes for goldfade*/
+            0%{
+                opacity:1;
+                visibility:visible;
+            }
+            70%{
+               opacity:1;
+            }
+            100%{
+               opacity:0;
+               visibility:hidden;
+            }
+         }
+         .goldfade{
+            animation:appear 0.8s ease-in-out forwards;
+         }
+         #net{
+            text-align:center;
+            max-width:500px;
+            margin:auto ;
+            padding:20px;
+          border-radius:20px;
+          margin-bottom: 10px;
+          box-shadow: 0 10px 30px rgba(243, 222, 0, 0.621);
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          display:block;
+          background-color:transparent;
+
+         }
+            
+         #hard{
+            text-align:center;
+            max-width:500px;
+            padding:20px;
+            margin:auto;
+            display:block;
+            border-radius:20px;
+            margin-bottom: 20px;
+            box-shadow:0 10px 30px rgba(243, 222, 0, 0.621);
+
+         }
+         #pro{
+            max-width:500px;
+            text-align:center;
+            padding:20px;
+            margin:auto;
+            display:block;
+            border-radius: 20px;
+            margin-bottom:20px;
+            box-shadow:0 10px 30px rgba(243, 222, 0, 0.621);
+         }
+         #cyb{
+            text-align:center;
+            max-width:500px;
+            padding:20px;
+            margin:auto;
+            display:block;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(243, 222, 0, 0.621);
+         }
+         #net:hover{
+            transform: translateY(-10px);
+            box-shadow:0 20px 40px rgba(0,0,0,0.2);
+            background-color: transparent;
+         }
+         #hard:hover{
+            transform: translateY(-10px);
+            box-shadow:0 20px 40px rgba(0, 0, 0,0.2);
+            background-color:transparent;
+         }
+         #pro:hover{
+            transform: translateY(-10px);
+            box-shadow:0 20px 40px rgba(0,0,0,0.2);
+            background-color:transparent;
+         }
+         #cyb:hover{
+            transform:translateY(-10px);
+            box-shadow:0 20px 40px rgba(0,0,0,0.2);
+            background-color:transparent;
+         }
+         .gif1{
+            width:10px;
+            height:10px;
+            border-radius:5px;
+            background-color:#D2D7D9;
+         }
+    </style>
+    
+    <body>
+        <ul>
+            <li><a href="redwox.html">HOME</a></li>
+            <li><a href="Summary.html">SUMMARY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="goldfade" id="goldfade">
+         <h1>REDWOX 
+            <span>TECHY</span>
+         </h1>
+        </div>
+        <div class="container">
+        <h1>REDWOX TECHY</h1>
+        </div>
+        <p>WE; TEAM MAINLY FOCUSED ON </p>
+        <div class="para2">
+        <p id="net">NETWORKING</p>
+        <p id="hard">HARDWARE</p>
+        <p id="pro">PROGRAMMING</p>
+        <p id="cyb">CYBER SECURITY</p>
+        </div>
+        <script>
+      if(!sessionStorage.getItem('animationShown')){
+         document.getElementById('goldfade').classList.add('show');
+         sessionStorage.setItem('animationShown','true');
+      }
+      else{
+         document.getElementById('goldfade').style.display='none';
+      }
+    </script>
+    </body>
+    <footer>
+       <p>© 2025 redwox private limited</p>
+        <p >© 2025-2030 redwox private limited. All rights reserved.</p>
+        <p>"All Rights Reserved to redwox techy"</p>
+    </footer>
+</html>

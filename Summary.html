@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>SUMMARY</title>
+        <link rel="website icon" type="png" href="owl favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asset&family=Butcherman&family=Climate+Crisis:YEAR@1979&family=Fascinate&family=Oi&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                background-color:#D2D7D9;
+            }
+            h1{
+                font-size: 100px;
+                color:rgb(179, 69, 171);
+                text-align:center;
+                font-family: "Fascinate", system-ui;
+                display:flex;
+                justify-content:center;
+            }
+            ul {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                overflow:hidden;
+                background-color:#D2D7D9;
+                display:flex;
+                justify-content:center;
+            }
+            ul li {
+                float:left;
+            }
+            ul li:last-child{
+                border-right:none;
+            }
+            li a{
+                display:block;
+                color:black;
+                text-decoration: none;
+                margin:0;
+                padding:24px 16px;
+
+            }
+            li a:hover:not(.active){
+                background-color:gold;
+            }
+            li a.active{
+                background-color:goldenrod;
+            }
+            .img1{
+              float:left;
+              margin-right:20px;
+              width:500px;
+              height:300x;
+              object-fit:cover;
+              transition:transform 0.3s ease-in;
+            }
+            .img1 img:hover{
+                transform:scale(2.05);
+            }
+            .img2{
+              float:right;
+              margin-left:20px;
+              width:600px;
+              height:400x;
+              clear:both;
+            }
+            .img3{
+                float:left;
+                margin-right:20px;
+                width:300px;
+                height:500px;
+                clear:both;
+            }
+            .img4{
+                float:right;
+                margin-left:20px;
+                width:500px;
+                height:450px;
+                clear:both;
+            }
+            .container{
+                max-width:none;
+                margin:0 auto;
+                display:flex;
+                flex-direction:row;
+                gap:40px;
+                align-items:stretch;
+                padding:30px;
+                border-radius:40px;
+                margin-bottom:30px;
+                box-shadow:0 10px 30px rgba(0,0,0,0.1);
+               
+            }
+
+            .heading2{
+                flex:1;
+            }
+            .heading2 h2{
+                color:black;
+                line-height:1.6;
+                font-size:35px;
+                font-family: "Protest Guerrilla", sans-serif;
+                 
+                
+            }
+            .heading2 p{
+                color:black;
+                line-height:1.6;
+                font-size:20px;
+            }
+            .container2{
+                max-width:none;
+                margin:0 auto;
+                display:flex;
+                flex-direction:row-reverse;
+                align-items:center;
+                padding:30px;
+                gap:40px;
+                border-radius:40px;
+                margin-bottom:30px;
+                box-shadow:0 10px 30px rgba(0,0,0,0.1);
+            }
+            @keyframes appear{
+                from{
+                    opacity: 0;
+                    scale:0.8;
+                }
+                to{
+                    opacity:1;
+                    scale:1;
+                }
+            }
+            .container2{
+                animation:appear linear;
+                animation-timeline:view();
+                animation-range: entry 25% cover 50%;
+            }
+            .heading3 {
+                flex:1;
+            }
+            .heading3 h2{
+                float:left;
+                margin-right:20px;
+                color:black;
+                line-height:1.6;
+                font-size:35px;
+                font-family: "Protest Guerrilla", sans-serif;
+            }
+            .heading3 p{
+                float:left;
+                margin-right:20px;
+                color:black;
+                line-height:1.6;
+                font-size:20px;
+            }
+            .container:hover{
+                transform:translateY(-10px);
+                box-shadow:0 20px 40px rgba(0,0,0,0.2);
+                background-color:gold;
+            }
+            .container2:hover{
+                transform:translateY(-10px);
+                box-shadow:0 20px 40px rgba(0,0,0,0.2);
+                background-color:gold;
+            }
+            .container3{
+             max-width:none;
+             margin:0 auto;
+             display:flex;
+             flex-direction:row;
+             align-items:center;
+             gap:40px;
+             padding:30px;
+             border-radius:40px;
+             margin-bottom:30px;
+             box-shadow:0 10px 30px rgba(0,0,0,0.1);
+            }
+            @keyframes appear{
+                from{
+                    opacity:0;
+                    scale:0.8;
+                }
+                to{
+                    opacity:1;
+                    scale:1;
+                }
+            }
+            .container3{
+                animation:appear linear;
+                animation-timeline:view();
+                animation-range:entry 25% cover 50%;
+            }
+            .heading3{
+                flex:1;
+            }
+            .heading3 p{
+                color:black;
+                line-height:1.6;
+                font-size:20px;
+            }
+            .heading3 h2{
+                color:black;
+                line-height:1.6;
+                font-size:35px;
+                text-align:center;
+            }
+            .container3:hover{
+                transform:translateY(-10px);
+                box-shadow:0 20px 40px rgba(0,0,0,0.2);
+                background-color:gold;
+            }
+            .container4{
+                max-width:none;
+                margin:0 auto;
+                display:flex;
+                flex-direction:row-reverse;
+                gap:40px;
+                padding:30px;
+                border-radius:40px;
+                margin-bottom:30px;
+                box-shadow:0 10px 30px rgba(0,0,0,0.1);
+            }
+            @keyframes appear{ /*keyframes is also called as animation blueprint, appear is a random name*/
+                from{                 /*starting point*/
+                    opacity:0;    /*this means transparent*/
+                    scale:0.8;   /*this means scale will be 80% */
+
+                }
+                to{                /*ending point*/
+                    opacity:1;     /*opacity become visible*/
+                    scale:1;      /*scale =100 */
+                }
+            }
+            .container4{
+                animation:appear linear; /*to call the keyframes, linear is used to speed up the animation also you can use ease(start with slow and fast in middle and slow at end)*/
+                animation-timeline:view(); /*to tell browser that when it return scroll the same animation should happen */
+                animation-range:entry 25% cover 50%; /*entery should be 25% visibility and in the middle it should be in 50% */
+            }
+            .container4:hover{
+                transform:translatey(-10px);
+                box-shadow:0 20px 40px rgba(0,0,0,0.2);
+                background-color:gold;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="redwox.html">HOME</a></li>
+            <li><a class="active" href="Summary.html">SUMMARY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <h1>SUMMARY</h1><br>
+        <!--first text outline-->
+        <div class="container">
+        <img class="img1" src="server picture.jpg" alt="server image" title="server image">
+        <div class="heading2">
+        <h2>SERVER MANAGEMENT</h2>
+        <p>Server management is the practice of maintaining, monitoring, and optimizing computer servers to ensure they operate efficiently, securely, and reliably. It involves tasks such as installing and updating operating systems, configuring hardware and software, managing user access and permissions, monitoring performance metrics, and implementing security measures like firewalls and regular patches. Administrators often use tools and platforms such as Microsoft Windows Server, Ubuntu Server, and VMware vSphere to manage physical and virtual environments. Effective server management also includes regular data backups, disaster recovery planning, and ensuring high availability to minimize downtime and protect critical business operations.</p>
+        </div>
+        </div>
+        <!--second text outline-->
+        <div class="container2">
+        <img class="img2" src="cyber security.jpg" alt="security image" title="security image">
+        <div class="heading3">
+            <h2>CYBER SECURITY</h2>
+            <p>Cyber security is the practice of protecting computer systems, networks, and data from digital attacks, unauthorized access, and damage. It involves implementing technologies, processes, and policies designed to safeguard sensitive information from threats such as malware, phishing, ransomware, and hacking attempts. Effective cyber security relies on tools like firewalls, encryption, antivirus software, and intrusion detection systems, as well as standards and frameworks such as National Institute of Standards and Technology (NIST) guidelines and the International Organization for Standardization (ISO) security standards. Organizations also depend on ethical hackers and security teams to identify vulnerabilities before malicious actors can exploit them. With the increasing reliance on digital systems, cyber security plays a critical role in protecting personal data, financial information, and national infrastructure.</p>
+                </div>
+                </div>
+                <div class="container3">
+                <img class="img3" src="coding.jpg" alt="coding image" title="coding image">
+                <div class="heading3">
+                    <h2>CODING</h2>
+                    <P>Coding is the process of writing instructions that tell a computer how to perform specific tasks using programming languages like Python, Java, or C++. It involves breaking down problems into logical steps, designing algorithms, and translating those steps into precise syntax that a computer can understand and execute. Coders use tools such as text editors, integrated development environments (IDEs), and version control systems to build everything from websites and mobile apps to video games and artificial intelligence systems. Beyond just writing code, coding also includes testing, debugging, and improving programs to make them efficient, reliable, and user-friendly.</P>
+
+                    </div>
+                </div>
+        </div>
+        <div class="container4">
+            <img class="img4" src="switch.jpg" alt="switch " title="network switch">
+            <div class="heading3">
+                <h2>NETWORK SWITCH MANAGEMENT </h2>
+                <p>Network switch management refers to the configuration, monitoring, and maintenance of network switches to ensure efficient, secure, and reliable data communication within an organization’s network. It involves tasks such as assigning IP addresses for remote access, configuring VLANs to segment traffic, setting up port security, enabling Quality of Service (QoS), and monitoring performance through protocols like SNMP. Managed switches from companies such as Cisco Systems, Juniper Networks, and Hewlett Packard Enterprise provide administrators with web-based interfaces, command-line access, or centralized management platforms to control traffic flow, enhance security, and troubleshoot issues. Effective switch management helps prevent network downtime, optimize bandwidth usage, and protect against unauthorized access or network attacks.</p>
+
+            </div>
+        </div>
+        </html>
+    </body>
